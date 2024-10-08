@@ -1,9 +1,7 @@
 .gradient {
-    background: linear-gradient(270deg, #0c7976, #0c5b79, #0c3979, #0c0e79, #0c0e79);
+    background: linear-gradient(270deg, #0c7976, #0c5b79, #0c3979, #0c0e79);
     background-size: 1000% 1000%;
-
     animation: AnimationName 26s ease infinite;
-    /* color: white; */
 }
 
 @keyframes AnimationName {
@@ -128,12 +126,10 @@
     margin-bottom: 15%;
 }
 
-
 .topImg .text-overlay {
     z-index: 10;
     position: relative;
 }
-
 
 .socialMedia {
     /* text-align: right; */
@@ -158,10 +154,21 @@
     font-family: 'Inknut Antiqua', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar {
+    background-color: #2e5a84;
+    font-family: 'Inknut Antiqua', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 @media (max-width: 768px) {
     .copyright {
         text-align: center;
         padding: 0;
         font-family: 'Inknut Antiqua', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .background {
+        
+        height: 70vh;
     }
 }
