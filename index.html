@@ -3,124 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayman Chowdhury</title>
-    <link rel="stylesheet" href="syle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
+    <title>Ayman Chowdhury – Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+
+    <link rel="stylesheet" href="syle.css">
+</head>
+
+
+
+<body>
+    <!-- Header with nav -->
+    <header class="header">
+        <nav class="container nav">
+            <a href="/" class="logo"><span class="logo-name">Ayman Chowdhury</span></a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content reveal">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Ayman Chowdhury</span></h1>
+            <p class="hero-subtitle">Software Engineer & Competitive Programmer</p>
+            <p class="hero-description">I build impactful solutions through clean code, creative problem-solving, and a passion for technology. From crafting seamless web experiences to designing efficient algorithms, I bridge the gap between ideas and execution. With a strong foundation in full-stack development and competitive programming, I’m constantly learning, innovating, and turning challenges into opportunities.</p>
+            <div class="social-buttons">
+                <a href="https://github.com/ado1d" target="_blank" class="social-button" aria-label="GitHub">
+                   
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.043-3.338.724-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.757-1.333-1.757-1.088-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.304 3.495.997.108-.776.419-1.305.762-1.605-2.665-.304-5.466-1.334-5.466-5.93 0-1.31.468-2.381 1.235-3.221-.123-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.517 11.517 0 0 1 3.003-.404c1.018.005 2.042.137 3.003.404 2.291-1.553 3.298-1.23 3.298-1.23.653 1.649.242 2.873.119 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.804 5.624-5.475 5.921.43.371.823 1.102.823 2.222 0 1.604-.015 2.896-.015 3.286 0 .319.218.694.825.576C20.565 22.092 24 17.592 24 12.297 24 5.669 18.627.297 12 .297z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/" target="_blank" class="social-button" aria-label="LinkedIn">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                        <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                    </svg>
+
+                </a>
+                <a href="https://www.facebook.com/ayman.chowdhury.7731" target="_blank" class="social-button" aria-label="Facebook">
+                    <!-- Facebook icon -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.352C0 23.406.594 24 1.325 24H12.82v-9.294H9.692V11.04h3.128V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.666h-3.12V24h6.116C23.406 24 24 23.406 24 22.676V1.325C24 .594 23.406 0 22.675 0z"/>
+                    </svg>
+                </a>
+
+                <a href="https://codeforces.com/profile/adold_op" target="_blank" class="social-button" aria-label="Facebook">
+                    <!-- Facebook icon -->
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="code-forces">
+                        <path fill="#F44336" d="M24 19.5V12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 18 12v7.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5z"></path>
+                        <path fill="#2196F3" d="M13.5 21a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 13.5 3h-3C9.673 3 9 3.672 9 4.5v15c0 .828.673 1.5 1.5 1.5h3z"></path>
+                        <path fill="#FFC107" d="M0 19.5c0 .828.673 1.5 1.5 1.5h3A1.5 1.5 0 0 0 6 19.5V9a1.5 1.5 0 0 0-1.5-1.5h-3C.673 7.5 0 8.172 0 9v10.5z"></path>
+                    </svg>
+                </a>
+                
+                
+            </div>
+            <a href="#contact" class="btn cta-btn">Contact Me</a>
+            <a href="#contact" class="btn cv-btn">View CV</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
         <div class="container">
-            <a class="navbar-brand" href="#">Ayman Chowdhury</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid reveal">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Dart</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Web</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases</h3>
+                    <div class="tags">
+                        <span class="tag">Postgrees</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools &amp; Others</h3>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Postman</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="proficient-list">
+                <h3>Proficient In:</h3>
+                <ul>
+                    <li><span class="icon">⚡</span> Building responsive web interfaces</li>
+                    <li><span class="icon">🧠</span> Algorithm design &amp; problem solving</li>
+                    <li><span class="icon">🔧</span> Full‑stack development with MERN</li>
+                    <li><span class="icon">🌐</span> API design &amp; data modelling</li>
                 </ul>
             </div>
         </div>
-    </nav>
-    
-    <!-- top -->
-     <section class="gradient top" id="about">
-        <div class="topPage container"> 
-            <div class="row">
-                <div class="col-md-6 col-sm-12 nameText tophalf">
-                    <div class="nameTextTop nameText">
-                        Hi everyone, my name is
-                    </div>
-                    <div class="fullName nameText">
-                        <div class="firstName">Ayman</div>    
-                        <div class="lastName">Chowdhury</div>
-                    </div>
-                    <div class="nameTextDown nameText">
-                        I'M A L​AZY PROGRAMMER
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-12 profilePic">
-                    <img src="./Assets/profile-ayman.jpg" alt="Ayman's picture" height="380px" class="pictureProfile">
-                </div>
-
-            </div>
-        </div>
-     </section>
-
-     <section class="background">
-
-        <div class="container">
-            <div class=" row">
-                <div class="col-md-6 col-sm-12 text">
-                    <div><img src="./Assets/design2.gif" alt="design" height="105px"></div>
-                    <div class="textNormal" id="background">
-                        <div><p>A Quick<p></div>
-                        <div><p>Background<p></div>
-                    </div>   
-                </div>
-
-                <div class="col-md-6 col-sm-12">
-
-                    <div class="heading" id="heading1">
-                        <div class="top text">
-                            <p>I'M BASED IN</p>
-                        </div>
-                        <div class="description text">
-                            <p>Sonapur, Begumganj, just besides ​Noakhali​ Canal</p>
-                        </div>
-                    </div>
-
-                    <div class="heading" id="heading2">
-                        <div class="top text">
-                            <p>STUDY​ING AT</p>
-                        </div>
-                        <div class="description text">
-                            <p>Software Engineering(2nd Year) at ​Shahjalal University of Science and ​Technol​ogy</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-     </section>
-
-    <section class="contactPage">
-        <div class="topImg">
-            <img src="./Assets/letsTalkImg.jpg" alt="random image" class="img">
-            <div class="text-overlay"><p>Let's Have a Talk</p></div>
-            <div class="container contactContainer">
-                <div class="row" id="contact">
-                    <div class="contact-info col-md-6 col-sm-12">
-                        <p>Email: <a href="mailto:aaymanchowdhury@gmail.com">aaymanchowdhury@gmail.com</a></p>
-                        <p>Phone: +88 0153-7717805</p>
-                        <p>Address: Maijdee Court, ​Noakhali​, Bangladesh</p>   
-                    </div>
-                    
-                    <div class="socialMedia col-md-6 col-sm-12">
-                        <h3>My Socials</h3>   
-                        <br>
-                        <a href="https://www.facebook.com/ayman.chowdhury.7731/" target="_blank"><img src="./Assets/facebook.svg" alt="facebook logo" height="30"></a>
-                        <a href="https://www.facebook.com/ayman.chowdhury.7731/" target="_blank"><img src="./Assets/in.svg" alt="linkedIn logo" height="30"></a>
-                        <a href="https://www.facebook.com/ayman.chowdhury.7731/" target="_blank"><img src="./Assets/insta.svg" alt="insta logo" height="30"></a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">@ Ayman Chowdhury</div>
-        </div>
-        
-        
     </section>
 
-    
+    <!-- Experience section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline reveal">
+                <!-- Experience item 1 -->
+                <div class="experience-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineering Student</h3>
+                        <span class="period">2021&nbsp;–&nbsp;present</span>
+                        <p>Studying at SUST with a focus on software engineering principles, algorithms and systems design. Working on academic projects and collaborating with fellow students on group assignments.</p>
+                    </div>
+                </div>
+                <!-- Experience item 2 -->
+                <div class="experience-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full-stack Web Developer</h3>
+                        <span class="period">2023&nbsp;–&nbsp;present</span>
+                        <p>Designed and developed custom websites for local businesses using React and Node.js. Focused on creating responsive designs, optimising performance and ensuring user satisfaction.</p>
+                    </div>
+                </div>
+                <!-- Experience item 3 -->
+                <div class="experience-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Open‑Source Contributor</h3>
+                        <span class="period">2024&nbsp;–&nbsp;present</span>
+                        <p>Contributed to various open‑source projects by submitting bug fixes, improving documentation and developing new features. Collaborated with global developers to learn and grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Achievements section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid reveal">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy achievement-icon" aria-hidden="true"></i>
+                    <h3>Top 20, SUST Programming Contest&nbsp;2024</h3>
+                    <p>Secured rank 18 place among more than 50 teams in the annual SUST intra‑university programming contest</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-code achievement-icon" aria-hidden="true"></i>
+                    <h3>1000+ Problems Solved on Codeforces and other  OJ</h3>
+                    <p>Demonstrated consistent problem‑solving skills by solving over a thousand competitive programming challenges on Codeforces, achieving a high rating.</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-desktop achievement-icon" aria-hidden="true"></i>
+                    <h3>Participated onsite IUPC</h3>
+                    <p>Playing several onsite inter-university programming contests</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-check-double achievement-icon" aria-hidden="true"></i>
+                    <h3>Finished 8th in Leading University Junior IUPC</h3>
+                    <p>Secured inside top 10 by solving 2 problems during the freezing time using segment tree data structure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid reveal">
+                <div class="project-card">
+                    
+                    <img src="images/androidapp.png" alt="" class="project-image" loading="lazy">
+                    <h3>Crypto Market Predictor</h3>
+                    <p>A full‑stack Android/Ios application built with Flutter (Dart) that enables get current market strategy weather to enter the market or not. It shows the live prices and price changes with chart also gives trading signal based on some technical indicators.</p>
+                    <a href="https://github.com/ado1d/Android-Project-SWE250" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/Screenshot_1.png" alt="" class="project-image" loading="lazy">
+                    <h3>To-Do List</h3>
+                    <p>A lightweight JavaScript web app for task management. Allows users to add, edit, and delete tasks.</p>
+                    <a href="https://ado1d.github.io/todo-list-forked" target="_blank" class="project-link">Open Webpage</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/Screenshot_4.png" alt="" class="project-image" loading="lazy">
+                    <h3>Blog App</h3>
+                    <p>A full-stack blog platform built with Node.js and EJS templates. Features include creating, editing, and deleting posts, dynamic rendering, and deployment on Render. Designed for simplicity, usability, and maintainability.</p>
+                    <a href="https://github.com/ado1d/blog-app" target="_blank" class="project-link">View on GitHub</a>
+                    <!-- <p></p> -->
+                    <a href="https://blog-app-ns02.onrender.com/" target="_blank" class="project-link">View Webpage</a>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="images/Screenshot_3.png" alt="" class="project-image" loading="lazy">
+                    <h3>Simon Game</h3>
+                    <p>A browser-based memory game using JavaScript, HTML, and CSS. Users repeat increasingly complex color sequences, enhancing memory skills.</p>
+                    <a href="https://github.com/ado1d/Simon-Game" target="_blank" class="project-link">View on GitHub</a>
+                    <!-- <p></p> -->
+                    <a href="https://ado1d.github.io/Simon-Game" target="_blank" class="project-link">View Webpage</a>
+
+                </div>
+
+                
+                <div class="project-card">
+                    <img src="images/Screenshot_5.png" alt="" class="project-image" loading="lazy">
+                    <h3>Drum Kit</h3>
+                    <p>An interactive JavaScript web app where users play drum sounds via keypresses or clicks. Features smooth animations and real-time audio playback.</p>
+                    <a href="https://github.com/ado1d/Simon-Game" target="_blank" class="project-link">View on GitHub</a>
+                    <!-- <p></p> -->
+                    <a href="https://ado1d.github.io/Simon-Game" target="_blank" class="project-link">View Webpage</a>
+
+                </div>
+
+
+                <div class="project-card">
+                    <img src="images/portfolio-website.png" alt="Personal Portfolio Website" class="project-image" loading="lazy">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>An ongoing project to design and develop a responsive personal portfolio website using modern HTML, CSS and JavaScript. The site highlights my projects, skills and contact information.</p>
+                    <a href="https://github.com/ado1d/portfolio" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <div class="container reveal">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-intro">Interested in working together or just want to say hi? I'd love to hear from you!</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:aaymanchowdhury@gmail.com">aaymanchowdhury@gmail.com</a></p>
+                <p><strong>Phone:</strong> +880&nbsp;1533&nbsp;7717805</p>
+                <p><strong>Address:</strong> Sylhet, Bangladesh</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ado1d" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <footer class="footer">&copy; 2025 Ayman&nbsp;Chowdhury
+            <p>Arigato gozaimasu for visting my portfolio.</p>
+        </footer>
+    </section>
+
+   
+    <script src="index.js"></script>
 </body>
 </html>
